@@ -8,5 +8,5 @@ marco () {
 }
 
 polo () {
-	cd "$workingDirectory"
+	cd "$workingDirectory" || return
 }	
