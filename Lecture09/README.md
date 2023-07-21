@@ -8,8 +8,8 @@ So, entropy is equal to log_2(62 ^ 8) which is approximately 48 bits.
 3) Higher entropy is the better choice, so first one is stronger.
 4) Firstly, we calculate how many passwords an attacker can try guessing in a year.
   It is equal to 10000*3600*24*365 = 315360000000.
-  - First password: (2^66)/315360000000 = approximately 233976966 years.
-  - Second password: (2^48)/315360000000 = approximately 893 years.
+    - First password: (2^66)/315360000000 = approximately 233976966 years.
+    - Second password: (2^48)/315360000000 = approximately 893 years.
 ## Cryptographic hash functions
 - I used the [Hungarian mirror](http://ftp.bme.hu/debian-cd/).
 Download the required files:
@@ -31,6 +31,6 @@ curl -O https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/SHA256SUMS
 1. `ssh-keygen -t ed25519`
 2. `gpg --gen-key`
 3. `gpg --encrypt --sign --armor -r me@anishathalye.com name_of_file`
-4. First run magical command `export GPG_TTY=$(tty)`
-  Then, run `git commit -S -m "commit-message"`
-  Lastly check with the command `git show --show-signature`
+4. - First run magical command `export GPG_TTY=$(tty)`
+   - Then, run `git commit -S -m "commit-message"`
+   - Lastly check with the command `git show --show-signature`
