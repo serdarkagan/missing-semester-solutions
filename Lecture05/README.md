@@ -1,4 +1,4 @@
-# Lecture5 - Version Control (Git)
+# Lecture5 - Command-line Environment
 ## Job Control
 1. ```
    sleep 10000
@@ -13,7 +13,10 @@
    ```
    Solution for different bash session case with the script [pidwait.sh](/Lecture05/pidwait.sh):
    ```
-   sleep 60 &; grep -f "sleep" | xargs pidwait.sh
+   sleep 60 &  
+   ```
+   ```
+   pgrep -f "sleep" | xargs pidwait.sh
    ```
    After these commands I get the output "Sleeped 57 seconds.".
    It's normal that 3 seconds comes from other operations (compare, increment, execute).
