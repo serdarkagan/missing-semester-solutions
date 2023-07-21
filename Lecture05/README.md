@@ -11,7 +11,7 @@
    ```
    sleep 60 & wait && ls
    ```
-   Solution for different bash session case with the script pidwait.sh:
+   Solution for different bash session case with the script [pidwait.sh](/Lecture05/pidwait.sh):
    ```
    sleep 60 &; grep -f "sleep" | xargs pidwait.sh
    ```
