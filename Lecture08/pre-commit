@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if ! make paper.pdf 
+then
+	echo "Make command failed, commit refused."
+	exit 1
+fi
