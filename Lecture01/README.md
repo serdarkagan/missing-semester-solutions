@@ -22,4 +22,7 @@
 9. ```chmod u+x /tmp/missing/semester```
    If a file starts with "#!" it indicates that this file is a script. In that case it must be run with "sh".
 10. ```date -r /tmp/missing/semester | cat > ~/last-modified.txt```
-11. [SKIP] In Windows it is hard to find where it is, I skipped it for now.
+11. Battery Level:
+    ```
+    /sys/class/power_supply/BAT0; cat capacity
+    ```
