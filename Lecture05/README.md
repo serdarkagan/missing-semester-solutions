@@ -48,7 +48,7 @@
    First use ssh to connect to VM. 
    Then execute `python3 -m http.server 8888`.
    Since we edited `.ssh/config` we don't need to do local port forwarding again.
-5. [SKIP] Skipped it for now.
+5. [SKIP] I had to skip this exercise, because my main machine is Windows.
 6. Execute command `sudo apt-get install mosh` in VM.
    Then if you disconnect the network adapter of the server, and connect it again; mosh succesfully recovers from that, and you don't lose the ssh connection.
 7. - -N: Do not execute a remote command.  This is useful for just forwarding ports.
